@@ -28,14 +28,6 @@ const handleClick = (element) => {
 
 
 
-
-
-
-
-
-
-
-
 // this function places the "currentMarker" inside the HTML element that was clicked and calls the "changeMarker" function.
 const addMarker = (id) => {
 
@@ -44,6 +36,9 @@ const addMarker = (id) => {
   console.log(`Therefore, a  "${currentMarker}"  should be placed in the square with the id:  ${id}`)
   
   // @TODO-2: Build a line of code that will set the innerHTML property of the element that was clicked to the "currentMarker"
+
+ let currentElement = document.getElementById(id);
+ currentElement.innerHTML = `${currentMarker}`;
   
   // @TODO-2.5: MIX & MATCH, You will need the following pieces of code to build that line:
   // = currentMarker
@@ -86,13 +81,12 @@ const resetBoard = () => {
   
   // @TODO-3: To make your "Restart" button work you'll need to build a line of code here that:
       // collects all of the "td" elements into an HTML Collection: https://www.w3schools.com/jsref/dom_obj_htmlcollection.asp  
+
+      const squares= document.getElementsByTagName("TD");
+      console.log(squares); 
+
+      console.log(squares.length)
     
-  // @TODO-3.5: MIX & MATCH, You will need the following pieces of code to build that line:
-  // squares
-  // .getElementsByTagName("TD")
-  // =
-  // document
-  // const
   
   // loops over the HTML Collection of TDs and clears out the Xs and Os
   for (i=0; i < squares.length; i++) {
