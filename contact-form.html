@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1> Contact Form</h1>
+    </header>
+
+    <form>
+        <div>   
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="textarea">Comments</label><br>
+            <textarea maxlength="500" minlength="20"> 
+            </textarea>
+        </div>
+
+        <div>
+            <label for="checkbox">How did you hear about me?</label><br>
+
+                <input type="checkbox" id="classmate" name="classmate" value="classmate">
+                <label for="classmate"> Classmate</label><br>
+                <input type="checkbox" id="resume" name="resume" value="resume">
+                <label for="resume"> Resume</label><br>
+                <input type="checkbox" id="linkedin" name="linkedin" value="linkedin">
+                <label for="linkedin"> LinkedIn</label><br>
+                <input type="checkbox" id="bootcamp" name="bootcamp" value="bootcamp">
+                <label for="bootcamp"> Coding Academy Rec</label>
+        </div>
+        <div>
+             <p>Would you like us to respond to you?</p>
+                <input type="radio" id="answer1" name="answer1" value="Yes">
+                <label for="answer1">Yes</label><br>
+                <input type="radio" id="answer2" name="answer2" value="No">
+                <label for="answer2">No</label>
+        </div>
+        <div>
+            <label for="bithday">Receive a special gift on your birthday by entering it below?</label>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    
+</body>
+</html>
+
+
